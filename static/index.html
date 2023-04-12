@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ThingsWeb</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="/images/favicon/things.png"> 
+  <script async src="https://arc.io/widget.min.js#YgScNEk8"></script>
+</head>
+<body>
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+    </ul>
+  </nav>
+  </div>
+  <div class="box">
+    <div class="form">  
+      <form id="uv-form" class="flex-center">
+        <input
+          id="uv-search-engine"
+          value="https://www.google.com/search?q=%s"
+          type="hidden"     
+        />  
+        <div id="search-container">      
+          <input id="uv-address" type="text" placeholder="Search the web" />       
+          <button type="submit"><i class="fa fa-search"></i></button>   
+        </div>  
+      </form>
+    </div>  
+    <div class="button">
+    </div>
+    <div class="wave"></div>
+    <footer>  
+      <p>&copy; 2023 ThingsWeb </p>  
+    </footer>
+    
+    <script src="./uv/uv.bundle.js"></script>
+    <script src="./uv/uv.config.js"></script> 
+    <script src="register-sw.js"></script> 
+    <script src="index.js"></script>
+    <script src="loader.js"></script>
+</body>
+</html>  
