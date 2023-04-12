@@ -1,47 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>ThingsWeb</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="/images/favicon/things.png"> 
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.svg">
+  <link href="./assets/styles/style.css" rel="stylesheet" type="text/css" />
   <script async src="https://arc.io/widget.min.js#YgScNEk8"></script>
 </head>
 <body>
   <div class="preloader">
     <div class="loader"></div>
   </div>
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-    </ul>
-  </nav>
-  </div>
-  <div class="box">
-    <div class="form">  
-      <form id="uv-form" class="flex-center">
-        <input
-          id="uv-search-engine"
-          value="https://www.google.com/search?q=%s"
-          type="hidden"     
-        />  
-        <div id="search-container">      
-          <input id="uv-address" type="text" placeholder="Search the web" />       
-          <button type="submit"><i class="fa fa-search"></i></button>   
-        </div>  
-      </form>
-    </div>  
-    <div class="button">
+  <div id="bg">
+    <div class="logo">
+      <img src="./assets/images/logo.svg">
     </div>
-    <div class="wave"></div>
-    <footer>  
-      <p>&copy; 2023 ThingsWeb </p>  
-    </footer>
-    
-    <script src="./uv/uv.bundle.js"></script>
-    <script src="./uv/uv.config.js"></script> 
-    <script src="register-sw.js"></script> 
-    <script src="index.js"></script>
-    <script src="loader.js"></script>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">
+        <img src="./assets/images/icon.svg">
+      </button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="games.html">Games</a>
+        <a href="movies.html">Movies</a>
+        <a href="credits.html">Credits</a>
+      </div>
+      <div class="searchbox" id="searchbox">
+        <form id="uv-form" class="flex-center">
+          <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden" />
+          <div id="search-container">      
+            <input id="uv-address" type="text" placeholder="Search..." />       
+            <button type="submit"><i class="fa fa-search"></i></button>   
+        </div>  
+        </form>
+      </div>
+      <div class="cloak">
+        <button onclick="openInNewTab(location.href)">Cloak</button>
+      </div>
+      <div class="history">
+        <button onclick="history()">History</button>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/js/loader.js"></script>
+  <script src="./assets/js/scripts.js"></script>
+  <script src="./assets/js/particles.js"></script>
+  <script async src="./assets/js/app.js"></script>
+  <div class="footer">
+    <p>Join <a href="https://discord.gg/Vbnp4Tesuu">Chromium Space</a> For More Links!</p>
+  </div>
 </body>
-</html>  
+
+</html>
