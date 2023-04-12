@@ -1,7 +1,7 @@
 {
-  "name": "things-proxy",
+  "name": "chromium-space",
   "version": "1.0.0",
-  "description": "Things Proxy, made by Things Network",
+  "description": "chromium space, made by chromium space team",
   "type": "module",
   "scripts": {
     "start": "node index.js"
@@ -9,7 +9,7 @@
   "files": ["static", "src", "ssl", ".gitignore"],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Things-Network/Things-Proxy"
+    "url": "git+https://github.com/ChromiumSpace/Chromium-Space"
   },
   "keywords": ["unoffical", "ultraviolet", "unblock", "bypass-filter", "Things-Network"],
   "author": "",
